@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/tracer8086/glfw/v3.3/glfw"
 	"github.com/vulkan-go/demos/vulkandraw"
-	"github.com/vulkan-go/glfw/v3.3/glfw"
 	vk "github.com/vulkan-go/vulkan"
 	"github.com/xlab/closer"
 )
