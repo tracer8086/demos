@@ -24,7 +24,7 @@ func main() {
 	orPanic(err)
 	defer window.Destroy()
 
-	vkDevice, err := vulkaninfo.NewVulkanDevice(appInfo, window.GLFWWindow())
+	vkDevice, err := vulkaninfo.NewVulkanDevice(appInfo, uintptr(window.Handle()))
 	orPanic(err)
 	vulkaninfo.PrintInfo(vkDevice)
 	vkDevice.Destroy()

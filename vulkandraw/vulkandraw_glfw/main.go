@@ -53,7 +53,7 @@ func main() {
 	}
 
 	v, err = vulkandraw.NewVulkanDevice(appInfo,
-		window.GLFWWindow(),
+		uintptr(window.Handle()),
 		window.GetRequiredInstanceExtensions(),
 		createSurface)
 	orPanic(err)
